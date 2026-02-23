@@ -130,19 +130,7 @@ function renderJobs(){
     document.getElementById("rejected-count").innerText =jobs.filter(j=>j.status==="rejected").length;
    }
  
-  //  tab switching 
-  document.querySelectorAll(".tab").forEach(tab=>{
-    tab.addEventListener("click",()=>{
-      document.querySelectorAll(".tab")
-      .forEach(t=>t.classList.remove("tab-active"));
 
-      tab.classList.add("tab-active");
-
-      currentTab= tab.dataset.tab;
-
-      renderJobs();
-    });
-  });
 
   // first loading
   updateDashboard();
