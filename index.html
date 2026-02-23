@@ -8,6 +8,31 @@
      <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
      <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
+<body class="bg-blue-50 min-h-screen p-6 r">
+    <!-- Header -->
+    <div class="mb-10">
+        <h1 class="text-3xl font-bold text-blue-900 mb-10 ">Job Application Tracker</h1>
+    </div>
+    
 
+    <!-- Dashoard -->
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12 text-left">
+        <div class="bg-white p-6 rounded-xl shadow ">
+            <h2 class="text-gray-500">Total</h2>
+            <p id="total-count" class="text-3xl font-bold text-blue-700">8</p>
+        </div>
+        <div class="bg-white p-6 rounded-xl shadow ">
+            <h2 class="text-gray-500">Interview</h2>
+            <p id="interview-count" class="text-3xl font-bold text-green-700">0</p>
+        </div>
+        <div class="bg-white p-6 rounded-xl shadow ">
+            <h2 class="text-gray-500">Rejected</h2>
+            <p id="rejected-count" class="text-3xl font-bold text-red-700">0</p>
+        </div>
+       
+    </div>
+    <hr class="text-gray-300 mb-6">
+ 
 </body>
 </html>
