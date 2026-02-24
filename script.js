@@ -134,9 +134,36 @@ function renderJobs(){
   document.querySelectorAll(".tab").forEach(tab=>{
     tab.addEventListener("click",()=>{
       document.querySelectorAll(".tab")
-      .forEach(t=>t.classList.remove("tab-active"));
+      .forEach(t=>{t.classList.remove(
+        "tab-active",
+        "bg-blue-500",
+        "bg-green",
+        "bg-red-50",
+        "text-white"
+      );
+      // Default light colors
+      if(t.dataset.tab === "all"){
+        t.classList.add("bg-blue-500");
+      }
+      else if(t.dataset.tab === "interview"){
+        t.classList.add("bg-green-500");
+      }
+      else if(t.dataset.tab === "rejected"){
+        t.classList.add("bg-red-500");
+      }
+    });
+    // Active tab styling
+    tab.classList.remove(
+      "bg-blue-500",
+      "bg-green-500",
+      "bg-red-500"
+    );
 
-      tab.classList.add("tab-active");
+
+      
+     
+
+      tab.classList.add("tab-active","bg-blue-500","text-black");
 
       currentTab= tab.dataset.tab;
 
