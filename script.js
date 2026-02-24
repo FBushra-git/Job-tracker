@@ -31,7 +31,7 @@ function renderJobs(){
 
   // Jodi Job na thake 0
   if(filteredJobs.length === 0){
-    jobContainer.innerHTML = `<div class="flex flex-col items-center justify-center py-20 col-span-full bg-white p-12 rounded-2xl shadow-lg"><img src="jobs.png" class="w-40 mb-6">
+    jobContainer.innerHTML = `<div class="flex flex-col items-center justify-center py-20 col-span-full bg-white p-12 rounded-2xl shadow-lg"><img src="./jobs.png" class="w-40 mb-6">
     <h3 class="text-2xl font-bold text-gray-700">No Jobs Available</h3>
     <p class="text-gray-500 mt-2">Check back soon for new job opportunities</p></div>`;
     return;
